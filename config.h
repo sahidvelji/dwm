@@ -176,8 +176,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_i,		setlayout,	{.v = &layouts[7]} }, /* centeredfloatingmaster */
 	{ MODKEY,			XK_o,		incnmaster,     {.i = +1 } },
 	{ MODKEY|ShiftMask,		XK_o,		incnmaster,     {.i = -1 } },
-	{ MODKEY,			XK_p,			spawn,		SHCMD("mpc toggle") },
-	{ MODKEY|ShiftMask,		XK_p,			spawn,		SHCMD("mpc pause ; pauseallmpv") },
+	{ MODKEY,			XK_p,			spawn,		SHCMD("pomodoro_init 25; pkill -RTMIN+2 dwmblocks") },
+	{ MODKEY|ShiftMask,		XK_p,			spawn,		SHCMD("pomodoro_init 5; pkill -RTMIN+2 dwmblocks") },
 	{ MODKEY,			XK_bracketleft,		spawn,		SHCMD("mpc seek -10") },
 	{ MODKEY|ShiftMask,		XK_bracketleft,		spawn,		SHCMD("mpc seek -60") },
 	{ MODKEY,			XK_bracketright,	spawn,		SHCMD("mpc seek +10") },
@@ -222,6 +222,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_comma,	spawn,		SHCMD("mpc seek 0%") },
 	{ MODKEY,			XK_period,	spawn,		SHCMD("mpc next") },
 	{ MODKEY|ShiftMask,		XK_period,	spawn,		SHCMD("mpc repeat") },
+	{ MODKEY,			XK_slash,	spawn,		SHCMD("rm \"${XDG_DATA_HOME:-$HOME/.local/share}/pomodoro_end\"; pkill -RTMIN+2 dwmblocks") },
 
 	{ MODKEY,			XK_Left,	focusmon,	{.i = -1 } },
 	{ MODKEY|ShiftMask,		XK_Left,	tagmon,		{.i = -1 } },
