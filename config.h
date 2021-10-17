@@ -167,15 +167,15 @@ static Key keys[] = {
 	{ MODKEY,			XK_r,		spawn,		SHCMD(TERMINAL " -e ranger") },
 	{ MODKEY|ShiftMask,		XK_r,		spawn,		SHCMD(TERMINAL " -e htop") },
 	{ MODKEY,			XK_t,		setlayout,	{.v = &layouts[0]} }, /* tile */
-	{ MODKEY|ShiftMask,		XK_t,		setlayout,	{.v = &layouts[1]} }, /* bstack */
-	{ MODKEY,			XK_y,		setlayout,	{.v = &layouts[2]} }, /* spiral */
-	{ MODKEY|ShiftMask,		XK_y,		setlayout,	{.v = &layouts[3]} }, /* dwindle */
+	/* { MODKEY|ShiftMask,		XK_t,		setlayout,	{.v = &layouts[1]} }, /1* bstack *1/ */
+	/* { MODKEY,			XK_y,		setlayout,	{.v = &layouts[2]} }, /1* spiral *1/ */
+	/* { MODKEY|ShiftMask,		XK_y,		setlayout,	{.v = &layouts[3]} }, /1* dwindle *1/ */
 	{ MODKEY,			XK_u,		spawn,	SHCMD("passmenu") },
 	{ MODKEY|ShiftMask,		XK_u,		spawn,	SHCMD("emailmenu") },
-	{ MODKEY,			XK_i,		setlayout,	{.v = &layouts[6]} }, /* centeredmaster */
-	{ MODKEY|ShiftMask,		XK_i,		setlayout,	{.v = &layouts[7]} }, /* centeredfloatingmaster */
-	{ MODKEY,			XK_o,		incnmaster,     {.i = +1 } },
-	{ MODKEY|ShiftMask,		XK_o,		incnmaster,     {.i = -1 } },
+	/* { MODKEY,			XK_i,		setlayout,	{.v = &layouts[6]} }, /1* centeredmaster *1/ */
+	/* { MODKEY|ShiftMask,		XK_i,		setlayout,	{.v = &layouts[7]} }, /1* centeredfloatingmaster *1/ */
+	/* { MODKEY,			XK_o,		incnmaster,     {.i = +1 } }, */
+	/* { MODKEY|ShiftMask,		XK_o,		incnmaster,     {.i = -1 } }, */
 	{ MODKEY,			XK_p,			spawn,		SHCMD("pomodoro_init 25; pkill -RTMIN+2 dwmblocks") },
 	{ MODKEY|ShiftMask,		XK_p,			spawn,		SHCMD("pomodoro_init 5; pkill -RTMIN+2 dwmblocks") },
 	/* { MODKEY,			XK_bracketleft,		spawn,		SHCMD("mpc seek -10") }, */
@@ -186,13 +186,13 @@ static Key keys[] = {
 	/* { MODKEY|ShiftMask,		XK_backslash,		spawn,		SHCMD("") }, */
 
 	{ MODKEY,			XK_a,		togglegaps,	{0} },
-	{ MODKEY|ShiftMask,		XK_a,		defaultgaps,	{0} },
+	/* { MODKEY|ShiftMask,		XK_a,		defaultgaps,	{0} }, */
 	{ MODKEY,			XK_s,		togglesticky,	{0} },
 	/* { MODKEY|ShiftMask,		XK_s,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_d,		spawn,          SHCMD("dmenu_run") },
 	/* { MODKEY|ShiftMask,		XK_d,		spawn,		SHCMD("passmenu") }, */
 	{ MODKEY,			XK_f,		togglefullscr,	{0} },
-	{ MODKEY|ShiftMask,		XK_f,		setlayout,	{.v = &layouts[8]} },
+	/* { MODKEY|ShiftMask,		XK_f,		setlayout,	{.v = &layouts[8]} }, */
 	{ MODKEY,			XK_g,		shiftview,	{ .i = -1 } },
 	{ MODKEY|ShiftMask,		XK_g,		shifttag,	{ .i = -1 } },
 	{ MODKEY,			XK_h,		setmfact,	{.f = -0.05} },
@@ -205,9 +205,9 @@ static Key keys[] = {
 	{ MODKEY,			XK_Return,	spawn,		{.v = termcmd } },
 	/* { MODKEY|ShiftMask,		XK_Return,	togglescratch,	{.ui = 0} }, */
 
-	{ MODKEY,			XK_z,		incrgaps,	{.i = +3 } },
+	/* { MODKEY,			XK_z,		incrgaps,	{.i = +3 } }, */
 	/* { MODKEY|ShiftMask,		XK_z,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_x,		incrgaps,	{.i = -3 } },
+	/* { MODKEY,			XK_x,		incrgaps,	{.i = -3 } }, */
 	/* { MODKEY|ShiftMask,		XK_x,		spawn,		SHCMD("") }, */
 	/* { MODKEY,			XK_c,		spawn,		SHCMD("") }, */
 	/* { MODKEY|ShiftMask,		XK_c,		spawn,		SHCMD("") }, */
