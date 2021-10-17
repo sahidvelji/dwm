@@ -190,7 +190,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_s,		togglesticky,	{0} },
 	/* { MODKEY|ShiftMask,		XK_s,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_d,		spawn,          SHCMD("dmenu_run") },
-	/* { MODKEY|ShiftMask,		XK_d,		spawn,		SHCMD("passmenu") }, */
+	{ MODKEY|ShiftMask,		XK_d,		spawn,		SHCMD("discord") },
 	{ MODKEY,			XK_f,		togglefullscr,	{0} },
 	/* { MODKEY|ShiftMask,		XK_f,		setlayout,	{.v = &layouts[8]} }, */
 	{ MODKEY,			XK_g,		shiftview,	{ .i = -1 } },
@@ -205,7 +205,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_Return,	spawn,		{.v = termcmd } },
 	/* { MODKEY|ShiftMask,		XK_Return,	togglescratch,	{.ui = 0} }, */
 
-	/* { MODKEY,			XK_z,		incrgaps,	{.i = +3 } }, */
+	{ MODKEY,			XK_z,		spawn,	SHCMD("zathura") },
 	/* { MODKEY|ShiftMask,		XK_z,		spawn,		SHCMD("") }, */
 	/* { MODKEY,			XK_x,		incrgaps,	{.i = -3 } }, */
 	/* { MODKEY|ShiftMask,		XK_x,		spawn,		SHCMD("") }, */
